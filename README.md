@@ -1,16 +1,19 @@
-# real
+# Flutter_day2
+Day 2 of learning mobile app development with Flutter
+ Flutter Learning Journey – Day 2
 
-A new Flutter project.
+## 📅 Day 2 Summary
 
-## Getting Started
+Today I focused on **Flutter basics for building UI elements**.  
+I learned how to:
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Use **Container** for creating boxes and sections in the UI
+2. Apply **colors**, **width**, and **height** to a Container
+3. Use **BoxDecoration** to style a Container with:
+   - `borderRadius` (rounded corners)
+   - `border` (custom borders)
+   - `padding` (space inside the container)
+   - `margin` (space outside the container)
+4. Center widgets using **Center**
+5. Stack widgets **vertically** using **Column**
+6. Add **text and style it** using `Text` and `TextStyle`
