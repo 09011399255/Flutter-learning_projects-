@@ -93,29 +93,16 @@ class MyApp extends StatelessWidget {
                 
               )
             
-               
+            
                 ],
               ),
           ),
-
-           const Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Icon(Icons.phone, size: 30, color: Colors.blue),
-            Icon(Icons.email, size: 30, color: Colors.green),
-            Icon(Icons.location_on, size: 30, color: Colors.red),
-          ],
-        )
                 ]
       ),
       
       
 
-          ),
-
-        
-
-      
+          )
           
   
       )

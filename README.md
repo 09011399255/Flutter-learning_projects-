@@ -1,79 +1,39 @@
-
-# Flutter Learning – Day 3 🚀
-
-Today I practiced building **custom UI components** in Flutter using `Row`, `Column`, `Container`, and layout widgets like `SizedBox`. I also learned how to properly structure child widgets and avoid common syntax errors.
+# 📘 Flutter Learning Journey
 
 ---
 
-## 🧠 What I Learned
+## 🟢 Day 1 – August 4, 2025  
+**Goal:** Introduction to Flutter. Built a basic app using `main()` and `runApp()`.
 
-### ✅ 1. Flutter Layout Hierarchy
-
-- Used `MaterialApp`, `Scaffold`, `Center`, `Column`, and `Row` widgets to organize screen layout.
-- Understood how Flutter nests widgets — everything is a widget!
-
-### ✅ 2. The `Container` Widget
-
-- Used `Container` for styling and layout:
-  - `padding`, `margin`
-  - `width`, `height`
-  - `BoxDecoration` with `color` and `borderRadius`
-
-### ✅ 3. Reusable UI Pattern
-
-- Built a simple **profile card UI** containing:
-  - An icon
-  - A name (`Text`)
-  - A description (`Text`)
-- Duplicated the same card to simulate multiple profiles.
-
-### ✅ 4. Important Flutter Syntax Corrections
-
-- Learned:
-  - You must not use `child:` inside `children: []`
-  - How to fix unbalanced curly braces `{}` and parentheses `()`
-  - `Colors.grey[20]` is invalid — replaced it with `Colors.grey[200]`
+### 🔍 What I Learned:
+- `void main()` and `runApp()`
+- `MaterialApp`, `Scaffold`, `AppBar`, and `Text`
 
 ---
 
-## 📸 Screenshot Preview
+## 🟡 Day 2 – August 5, 2025  
+**Goal:** Practiced building layout boxes with `Container`.
 
-Two side-by-side **profile cards**, stacked vertically, styled with:
-- Blue and green background
-- Rounded corners
-- Person icon
-- Text labels
+### 🔍 What I Learned:
+- `Container` with color, width, height
+- `BoxDecoration` (borderRadius, padding, margin)
+- `Center`, `Column`, `Text`
 
 ---
 
-## 🔧 Widget Tree Structure
+## 🔵 Day 3 – August 6, 2025  
+**Goal:** Built two profile cards stacked vertically.
 
-```plaintext
-MaterialApp
-└── Scaffold
-    └── Center
-        └── Column
-            ├── Container (Profile Card 1)
-            ├── SizedBox(height: 16)
-            └── Container (Profile Card 2)
+### 🔍 What I Learned:
+- Nested `Row` and `Column` inside `Container`
+- Reused card layout
+- Syntax fixes (`children:` vs `child:`)
 
+---
 
-# Flutter_day2
-Day 2 of learning mobile app development with Flutter
- Flutter Learning Journey – Day 2
+## 🟣 Day 4 – August 7, 2025  
+**Goal:** Added icons to second card and practiced layout spacing.
 
-## 📅 Day 2 Summary
-
-Today I focused on **Flutter basics for building UI elements**.  
-I learned how to:
-
-1. Use **Container** for creating boxes and sections in the UI
-2. Apply **colors**, **width**, and **height** to a Container
-3. Use **BoxDecoration** to style a Container with:
-   - `borderRadius` (rounded corners)
-   - `border` (custom borders)
-   - `padding` (space inside the container)
-   - `margin` (space outside the container)
-4. Center widgets using **Center**
-5. Stack widgets **vertically** using **Column**
-6. Add **text and style it** using `Text` and `TextStyle`
+### 🔍 What I Learned:
+- `Icon`, `SizedBox`, `MainAxisAlignment`
+- Reused card with additional `Row` for icons
