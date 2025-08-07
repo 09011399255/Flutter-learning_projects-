@@ -5,6 +5,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -13,12 +15,12 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: Container(
             width: 250,
-            padding: EdgeInsets.all(20), // space inside
+            padding: const EdgeInsets.all(20), // space inside
             decoration: BoxDecoration(
               color: Colors.blueAccent,
               borderRadius: BorderRadius.circular(20),
             ),
-            child: Column(
+            child: const Column(
               mainAxisSize: MainAxisSize.min, // Wrap to content
               children: [
                 Icon(
