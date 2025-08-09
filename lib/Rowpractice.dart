@@ -17,9 +17,9 @@ class MyApp extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
                children: [
               Container(width: 60, height: 60, color: Colors.blue,),
-              SizedBox(width: 20), // space between boxes
+              const SizedBox(width: 20), // space between boxes
               Container(width: 60, height: 60, color: Colors.green,),
-              SizedBox(width: 20),
+              const SizedBox(width: 20),
               Container(width: 60, height: 60, color: Colors.red),
             ],
 

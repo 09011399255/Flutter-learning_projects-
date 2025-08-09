@@ -22,22 +22,11 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        body:  Center(
-          child: ElevatedButton.icon(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.mail_rounded
-            ),
-            label: const Text("MAil me"),
-            
-
-            style: TextButton.styleFrom(
-              backgroundColor: Colors.blue,
-              foregroundColor: Colors.white,
-            ),
-            
+        body: Center(
+          child: Image.asset(
+            "lib/Assets/Car.jpg",
+          ),
         ),
-      ),
       ),
     );
   }

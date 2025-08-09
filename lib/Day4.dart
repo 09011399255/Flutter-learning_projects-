@@ -1,5 +1,4 @@
 import "package:flutter/material.dart";
-import "package:flutter/widgets.dart";
 
 void main() {
   runApp(const MyApp());
@@ -22,8 +21,8 @@ class MyApp extends StatelessWidget {
                   Container(
               width: 600,
               height: 200,
-              padding: EdgeInsets.all(16),
-              margin: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(16),
+              margin: const EdgeInsets.all(20),
               decoration: BoxDecoration(
                 color: Colors.blueAccent,
                 borderRadius: BorderRadius.circular(20)
@@ -56,16 +55,16 @@ class MyApp extends StatelessWidget {
             ),
 
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
 
             
                    Container(
               width: 600,
               height: 200,
-              padding: EdgeInsets.all(16),
-              margin: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(16),
+              margin: const EdgeInsets.all(20),
               decoration: BoxDecoration(
-                color: Color.fromARGB(255, 6, 221, 185),
+                color: const Color.fromARGB(255, 6, 221, 185),
                 borderRadius: BorderRadius.circular(20)
               ),
 
