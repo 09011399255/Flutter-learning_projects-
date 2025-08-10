@@ -1,4 +1,4 @@
-import "package:flutter/material.dart";
+import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,35 +9,50 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.redAccent[400],
-          centerTitle: true,
-          title: const Text(
-            "my app",
-            style: TextStyle(
-              fontSize: 20,
-              fontFamily: "ARIAL",
-            ),
-          ),
-        ),
-        body:  Center(
-          child: ElevatedButton.icon(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.mail_rounded
-            ),
-            label: const Text("MAil me"),
-            
+    return const MaterialApp(
+      home: GreetingScreen(),
+      debugShowCheckedModeBanner: false,
+    );
+  }
+}
 
-            style: TextButton.styleFrom(
-              backgroundColor: Colors.blue,
-              foregroundColor: Colors.white,
-            ),
-            
-        ),
+class GreetingScreen extends StatefulWidget {
+  const GreetingScreen({super.key});
+
+  @override
+  State<GreetingScreen> createState() => _GreetingScreenState();
+}
+
+class _GreetingScreenState extends State<GreetingScreen> {
+  String message = "Hello, Flutter!";
+
+  void changeMessage() {
+    setState(() {
+      message = "You clicked the button!";
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Simple Practice App"),
       ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              message,
+              style: const TextStyle(fontSize: 24),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: changeMessage,
+              child: const Text("Click Me"),
+            ),
+          ],
+        ),
       ),
     );
   }
